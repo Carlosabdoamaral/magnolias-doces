@@ -24,11 +24,12 @@
     p {
       width: 30em;
       font-weight: 200;
+      text-align: justify;
     }
 
     button {
-      background: none;
       color: $secondary;
+      background: $green_opacity;
       padding: 0.8em 2em;
       border: none;
       border-radius: 5px;
@@ -39,7 +40,7 @@
 
     button:hover {
       cursor: pointer;
-      background: $green_opacity;
+      background: $green;
       color: $secondary;
     }
   }
@@ -66,4 +67,37 @@
 
 ::selection {
   background: $light;
+}
+
+@media (max-width: 768px) {
+  .banner {
+    .text {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      h2 {
+        text-align: center;
+        font-size: 3rem;
+        span {
+          color: $secondary;
+        }
+      }
+
+      p {
+        width: 100%;
+        text-align: justify;
+      }
+    }
+
+    .image {
+      display: none;
+    }
+
+    button {
+      margin-bottom: 10%;
+    }
+  }
 }

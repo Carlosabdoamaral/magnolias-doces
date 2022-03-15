@@ -1,0 +1,73 @@
+@import "../../variables";
+
+.products {
+  font-family: 'Poppins';
+  margin-top: 2%;
+
+  h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: $secondary;
+  }
+
+  p {
+    text-align: center;
+    font-weight: 300;
+    color: $secondary;
+  }
+
+  .list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2%;
+  }
+}
+
+.product-square {
+  width: 10em;
+  aspect-ratio: 1/1;
+  background: $pink;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5em;
+  border-radius: 10px;
+  color: #FFF;
+  transition: 0.4s ease-in-out;
+
+  img {
+    width: 10em;
+    border-radius: 10px;
+    aspect-ratio: 1/1;
+    transition: 0.4s ease-in-out;
+  }
+
+  .overlay {
+    width: 10em;
+    aspect-ratio: 1/1;
+    background: $pink;
+    opacity: 90%;
+    position: absolute;
+    border-radius: 10px;
+    transition: 0.4s ease-in-out;
+  }
+
+  h3 {
+    position: absolute;
+    z-index: 2;
+  }
+}
+
+.product-square:hover {
+  cursor: pointer;
+  width: 10.5em;
+
+  img, .overlay {
+    width: 10.5em;
+  }
+}

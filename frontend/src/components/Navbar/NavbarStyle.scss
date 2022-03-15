@@ -4,11 +4,16 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-content: center;
+  align-items: center;
   font-family: 'Poppins';
   padding: 0 5%;
-  background: $green;
   height: 50px;
+  background: #FFF;
+
+  a {
+    color: $secondary;
+    text-decoration: none;
+  }
 
   .links {
     a {
