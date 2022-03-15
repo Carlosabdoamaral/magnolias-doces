@@ -1,5 +1,4 @@
 import './IndexproductsStyle.scss';
-import bolos from '../../static/images/bolo.jpeg'
 import {ProductData} from "../../static/data/ProductData";
 export default function IndexProductsComponent(){
     return (
@@ -25,7 +24,7 @@ function ProductSquare(props) {
     return (
         <div className={"product-square"} onClick={() => { window.location.href = `/${url}` }}>
             <div className={"overlay"}/>
-            <img src={props.image}/>
+            <img src={props.image} alt={"Produto foto"}/>
             <h3>{props.name}</h3>
         </div>
     )
