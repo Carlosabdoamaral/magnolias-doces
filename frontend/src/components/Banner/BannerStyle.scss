@@ -1,0 +1,69 @@
+@import "src/variables";
+
+.banner {
+  font-family: 'Poppins';
+  padding: 5%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-image: radial-gradient(circle at top right, $green 40%, #ffffff 40%);
+
+  .text {
+    color: $secondary;
+
+    h2 {
+      font-size: 5rem;
+      font-weight: 600;
+
+      span {
+        color: $green;
+      }
+    }
+
+    p {
+      width: 30em;
+      font-weight: 200;
+    }
+
+    button {
+      background: none;
+      color: $secondary;
+      padding: 0.8em 2em;
+      border: none;
+      border-radius: 5px;
+      font-family: 'Poppins';
+      margin-top: 10%;
+      transition: 0.2s ease-in-out;
+    }
+
+    button:hover {
+      cursor: pointer;
+      background: $green_opacity;
+      color: $secondary;
+    }
+  }
+
+  .image {
+    width: 40%;
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 80%;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.34);
+      transition: 0.3s ease-in-out;
+    }
+
+    img:hover {
+      width: 85%;
+    }
+  }
+}
+
+::selection {
+  background: $light;
+}

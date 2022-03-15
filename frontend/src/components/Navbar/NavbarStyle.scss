@@ -1,0 +1,21 @@
+@import "src/_variables.scss";
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  font-family: 'Poppins';
+  padding: 0 5%;
+  background: $green;
+  height: 50px;
+
+  .links {
+    a {
+      margin: 0 3%;
+      color: $secondary;
+      text-decoration: none;
+      font-weight: 400;
+    }
+  }
+}
