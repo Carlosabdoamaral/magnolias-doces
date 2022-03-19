@@ -6,21 +6,13 @@ nav {
   justify-content: space-between;
   align-items: center;
   font-family: 'Poppins';
-  padding: 0 5%;
   height: 50px;
+  width: 100vw;
   background: #FFF;
 
   a {
     color: $secondary;
     text-decoration: none;
-  }
-
-  .links {
-    a {
-      margin: 0 3%;
-      color: $secondary;
-      text-decoration: none;
-      font-weight: 400;
-    }
+    padding: 0 2%;
   }
 }

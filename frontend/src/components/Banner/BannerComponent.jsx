@@ -16,7 +16,7 @@ export default function BannerComponent() {
 
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ante mauris, lacinia quis nisi et, sagittis lacinia nisi. Nulla aliquet tempor dictum. In consequat quam consequat ullamcorper auctor. Proin varius orci in mollis egestas.</p>
 
-                <button>Saber mais</button>
+                <button onClick={() => { window.location.href = "https://www.instagram.com/_magnoliadoces/"}}>Saber mais</button>
             </div>
 
             <div className={"image"}>

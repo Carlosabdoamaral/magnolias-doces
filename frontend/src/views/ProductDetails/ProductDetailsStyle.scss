@@ -1,0 +1,73 @@
+@import "src/variables";
+
+$margin_top : 7%;
+$margin_left : 7%;
+
+.product-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100vw !important;
+  max-height: 100vh !important;
+
+  .main {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100% !important;
+
+    img {
+      width: 40%;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+
+    .content {
+      width: 60% !important;
+      font-family: 'Poppins', serif;
+
+      .text {
+        width: 80%;
+
+        h1 {
+          font-weight: 400;
+          margin-top: $margin_top;
+          margin-left: $margin_left;
+        }
+
+        p {
+          font-weight: 200;
+          margin-left: $margin_left;
+        }
+
+        .flavor {
+          margin-top: 5%;
+
+          h4 {
+            font-weight: 500;
+            margin-left: $margin_left;
+          }
+
+          .flavor-list {
+            margin-left: $margin_left;
+            display: flex;
+            flex-direction: column;
+            overflow-x: scroll;
+            flex-wrap: nowrap;
+          }
+        }
+      }
+    }
+  }
+}
+
+.flavor-item {
+  background: #E9E9E9;
+  padding: 2%;
+  border-radius: 5em;
+  margin: 0.5%;
+  min-width: 150px;
+  height: fit-content;
+}

@@ -8,8 +8,8 @@ export default function IndexProductsComponent(){
 
             <div className={"list"}>
                 {
-                    ProductData.map((p) => (
-                        <ProductSquare name={p.name} image={p.image}/>
+                    ProductData.map((p, i) => (
+                        <ProductSquare name={p.name} image={p.image} id={i}/>
                     ))
                 }
             </div>
@@ -18,11 +18,8 @@ export default function IndexProductsComponent(){
 }
 
 function ProductSquare(props) {
-
-    let url = props.name
-
     return (
-        <div className={"product-square"} onClick={() => { window.location.href = `/${url}` }}>
+        <div className={"product-square"} onClick={() => { window.location.href = `/details`; sessionStorage.setItem("current_product", props.id) }}>
             <div className={"overlay"}/>
             <img src={props.image} alt={"Produto foto"}/>
             <h3>{props.name}</h3>
