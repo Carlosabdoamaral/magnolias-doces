@@ -9,6 +9,7 @@ $margin_left : 7%;
   align-items: flex-start;
   justify-content: space-between;
   width: 100vw !important;
+  height: 100vh;
   max-height: 100vh !important;
 
   .main {
@@ -20,6 +21,8 @@ $margin_left : 7%;
 
     img {
       width: 40%;
+      min-height: 94vh;
+      height: 100% !important;
       border-top-right-radius: 10px;
       border-bottom-right-radius: 10px;
     }
@@ -70,4 +73,25 @@ $margin_left : 7%;
   margin: 0.5%;
   min-width: 150px;
   height: fit-content;
+}
+
+@media (max-width: 768px) {
+  .product-details {
+    display: block;
+
+    .main {
+      display: block;
+      width: 100% !important;
+
+      img {
+        display: none;
+        min-height: 0;
+        height: 0;
+      }
+
+      .content{
+        width: 100% !important;
+      }
+    }
+  }
 }
